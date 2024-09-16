@@ -14,6 +14,11 @@ const otherStuff = "hello there, this is other stuff!"
 app.get('/', function (req, res) {
     res.render('home', { stuff: otherStuff });
 });
+//create about page route
+app.get('/about.html', function (req, res) {
+    res.render('about');
+});
+
 //set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
