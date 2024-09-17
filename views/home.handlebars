@@ -1,2 +1,29 @@
-<h1>This is my Handlebars Homepage...</h1>
-<p>{{stuff}}</p>
+<div class="jumbotron">
+    <h1 class="display-4">{{stock.[2. name]}} ({{stock.[1. symbol]}})</h1>
+
+    <strong>Latest matchScore: </strong>{{stock.[9. matchScore]}} <br />
+    <strong>Market Close: </strong> {{stock.[6. marketClose]}} <br />
+    <strong>Market Open: </strong> {{stock.[5. marketOpen]}} <br />
+    <strong>Currency: </strong> {{stock.[8. currency]}} <br />
+    <strong>Type: </strong> {{stock.[3. type]}} <br />
+    <strong>Region: </strong> {{stock.[4. region]}} <br />
+
+</div>
+
+
+{{!-- {{#each stock}}
+{{@key}} | {{this}}<br />
+{{/each}} --}}
+
+
+{{!-- {{#each stock.bestMatches}}
+<h2>{{this.[1. symbol]}}</h2>
+<p><strong>Name:</strong> {{this.[2. name]}}</p>
+<p><strong>Type:</strong> {{this.[3. type]}}</p>
+<p><strong>Region:</strong> {{this.[4. region]}}</p>
+<p><strong>Market Open:</strong> {{this.[5. marketOpen]}}</p>
+<p><strong>Market Close:</strong> {{this.[6. marketClose]}}</p>
+<p><strong>Timezone:</strong> {{this.[7. timezone]}}</p>
+<p><strong>Currency:</strong> {{this.[8. currency]}}</p>
+<p><strong>Match Score:</strong> {{this.[9. matchScore]}}</p>
+{{/each}} --}}
